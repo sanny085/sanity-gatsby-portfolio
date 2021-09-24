@@ -31,7 +31,7 @@ const IndexPage = ({data}) => (
 
   <Layout>
     <Seo title="Home" />
-    <h1>My Portfolio</h1>  
+    <h1> 🚨 My Portfolio 🚨</h1>  
     <ul style={{listStyle:'none', display:'flex', alignItems: 'space-between', padding:'0px'}}> 
     { 
       data.allSanityProject.edges.map(({node})=> {
