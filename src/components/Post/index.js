@@ -27,6 +27,7 @@ const Post = ({data}) => {
          <p>{data.sanityProject.description}</p>
          <GatsbyImage image={data.sanityProject.image.asset.gatsbyImageData} alt={data.sanityProject.title}/>
         <Link to="/">Back To Home Page</Link>
+
       </div>
     )
 }
