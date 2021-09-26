@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql, Link } from 'gatsby';
 import {  GatsbyImage } from "gatsby-plugin-image"
 
-
 export const query = graphql`
  query($slug: String) {
   sanityProject(slug: {current: {eq: $slug}}) {
@@ -28,11 +27,8 @@ const Post = ({data}) => {
          <p>{data.sanityProject.description}</p>
          <GatsbyImage image={data.sanityProject.image.asset.gatsbyImageData} alt={data.sanityProject.title}/>
         <Link to="/">Back To Home Page</Link>
-      
       </div>
     )
 }
 
 export default Post;
-
- 
